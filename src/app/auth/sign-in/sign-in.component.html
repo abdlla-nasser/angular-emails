@@ -1,0 +1,13 @@
+<h3>
+  Sign in to your account
+</h3>
+<form (ngSubmit)="onSubmit()" class="ui form" [formGroup]="authForm">
+  <app-input label="Username" [control]="authForm.get('username')"></app-input>
+  <app-input type="password" label="Password" [control]="authForm.get('password')"></app-input>
+  <div> *ngIf="errorState" class="ui red basic label">
+    <p>{{ error }}</p>
+  </div>
+  <div>
+    <button class="ui submit button primary">Submit</button>
+  </div>
+</form>

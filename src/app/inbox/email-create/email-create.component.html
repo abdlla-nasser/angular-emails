@@ -1,0 +1,8 @@
+<button class="ui primary inverted fluid button" (click)="toggleModal()">Compose</button>
+<app-form-modal *ngIf="modal" (dismiss)="toggleModal()">
+  <h3 modalTitle> Compose </h3>
+  <app-email-form (emailSubmit)="onSubmit($event)" [email]="email"></app-email-form>
+  <!-- <div modalFooter>
+    <button class="ui primary button">custom button</button>
+  </div> -->
+</app-form-modal>

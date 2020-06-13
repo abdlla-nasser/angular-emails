@@ -1,0 +1,5 @@
+<button class="ui primary inverted button" (click)="toggleModal()">Reply</button>
+<app-form-modal *ngIf="modal" (dismiss)="toggleModal()">
+  <h3 modalTitle> Reply </h3>
+  <app-email-form (emailSubmit)="onSubmit($event)" [email]="email"></app-email-form>
+</app-form-modal>
