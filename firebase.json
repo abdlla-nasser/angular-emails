@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "email",
+      "public": "dist/email",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

@@ -23,14 +23,4 @@ export class EmailResolverService implements Resolve<EmailComplete> {
       })
     );
   }
-  // resolve() {
-  //   return {
-  //     id: 'ladkjfbhjdkfl',
-  //     subject: 'dfdkbjfdfas',
-  //     to: 'asfdgghgfdfs',
-  //     from: 'asfdghgfhd',
-  //     html: 'sfdfhghfgfds',
-  //     text: 'safdsghjmhghfdg'
-  //   };
-  // }
 }

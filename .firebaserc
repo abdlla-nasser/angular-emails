@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "emailangular-da7da": {
+      "hosting": {
+        "email": [
+          "emailangular-da7da"
+        ]
+      }
+    }
+  }
+}
